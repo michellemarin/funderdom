@@ -1,44 +1,73 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset='utf8'>
-    <title>Welcome to the FunderDOM</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>Welcome to the Accordian</title>
   </head>
   <body>
     <header>
-      <h1>F<em>under</em>DOM</h1>
+      <h1>Accordian</h1>
         <hr>
     </header>
 
-  <section id='main'>
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>Blog</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+  <section id = 'accordian'>
+    <ul>
+  		<li>
 
-    <div id='nameTarget'>
-        </div>
+  			<h3>
+          Hello
+          </h3>
+        <ul class="active">
+  				<li><p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodoLorem ipsum dolor
+            sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p></li>
+  			</ul>
 
-      
+  		</li>
 
-    <div id='colorTarget'>
-        </div>
+      <li>
 
+        <h3>Hola</h3>
+        <ul>
+          <li><p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodoLorem ipsum dolor
+            sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.</p>
+            </li>
+        </ul>
 
+      </li>
+
+      <li>
+
+        <h3>
+          Konichiwa
+          </h3>
+        <ul>
+          <li><p>Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Aenean commodoLorem ipsum dolor
+            sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.</p>
+            </li>
+        </ul>
+      </li>
+  
+    </ul>
 
   </section>
 
-  <script id= 'nameTemplate' type="text/template">
-        <p><%= name %></p>
   </script>
-
-  <script id= 'colorTemplate' type="text/template">
-        <p><%= color %></p>
-  </script>
-
+  <!---LIBS -->
+  <script src='jquery/dist/jquery.js'    ></script>
   <script src='underscore/underscore.js' ></script>
+  <!---MY SCRIPTS -->
   <script src='scripts/main.js'          ></script>
+  <script src='scripts/funQuery.js'      ></script>
+
 </body>
 </html>

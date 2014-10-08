@@ -1,0 +1,89 @@
+$dark-blue: #083451;
+$white: #FFFFFF;
+$light-blue: #106DB3;
+$light-gray: #A3B3BF;
+$dark-gray: #5e686f;
+$primary-heading: 'Oswald', Verdana, sans-serif;
+$secondary-heading: 'Open Sans', Verdana, sans-serif;
+
+
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  color: $light-gray;
+}
+
+a:visted {
+  color: $dark-blue;
+}
+
+p {
+  text-align: left;
+  text-decoration: none;
+  color: $light-gray;
+  font-family: $secondary-heading;
+  font-size: 1em;
+  line-height: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+li {
+  margin-right: 10px;
+  color: $light-gray;
+  font-family: $secondary-heading;
+  font-size: 0.85em;
+  line-height: 3em;
+}
+
+h1 {
+  color: $dark-blue;
+  text-transform: uppercase;
+  font-family: $primary-heading;
+  font-size: 4em;
+  text-align: center;
+}
+
+.stripe {
+  background: #888;
+}
+
+.active {
+  color: $white;
+  background: $dark-blue;
+  transition: all .5s;
+  padding: 1em;
+}
+
+.active:hover {
+  padding-left: 20px;
+}
+
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+	display: none;
+}
+
+#accordian li.active ul {
+	display: block;
+}
+
+#accordian li p {
+  display: block;
+}
+
+#accordian p.active li {
+  display: none;
+}

@@ -74,7 +74,7 @@ var colors = [
   'cyan',
   'black',
   'yellow'
-]
+];
 
 var colorTemplates = _.map(colors, function(thisColor) {
   return colorTemplate({color: thisColor});
