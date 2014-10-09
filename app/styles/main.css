@@ -3,16 +3,23 @@
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: #F4F7D9; }
+
+header {
+  background-color: #009393;
+  padding-bottom: 10px; }
+
 a:link {
-  color: #A3B3BF; }
+  color: #A4CFBE; }
 
 a:visted {
-  color: #083451; }
+  color: #417378; }
 
 p {
   text-align: left;
   text-decoration: none;
-  color: #A3B3BF;
+  color: #F4F7D9;
   font-family: 'Open Sans', Verdana, sans-serif;
   font-size: 1em;
   line-height: 25px;
@@ -24,33 +31,54 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 li {
   margin-right: 10px;
-  color: #A3B3BF;
+  color: #A4CFBE;
   font-family: 'Open Sans', Verdana, sans-serif;
   font-size: 0.85em;
   line-height: 3em; }
 
 h1 {
-  color: #083451;
-  text-transform: uppercase;
-  font-family: 'Oswald', Verdana, sans-serif;
+  color: #F4F7D9;
+  font-family: 'Raleway', Verdana, sans-serif;
   font-size: 4em;
   text-align: center; }
 
+h2 {
+  color: #417378;
+  font-family: 'Open Sans', Verdana, sans-serif;
+  font-size: 2em;
+  text-align: center; }
+
+h4 {
+  color: #417378;
+  font-family: 'Open Sans', Verdana, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 10px; }
+
 .stripe {
-  background: #888; }
+  background: #A4CFBE; }
 
 .active {
-  color: #FFFFFF;
-  background: #083451;
-  transition: all 0.5s;
-  padding: 1em; }
+  color: #F4F7D9;
+  background: #417378;
+  transition: all 0.8s;
+  padding: 1em;
+  -webkit-transition: height 0.4s ease-out;
+  -moz-transition: height 0.4s ease-out;
+  -o-transition: height 0.4s ease-out;
+  transition: height 0.4s ease-out; }
 
-.active:hover {
-  padding-left: 20px; }
+h3:hover {
+  padding-left: 40px;
+  padding-top: 10px;
+  font-family: 'Raleway', Verdana, sans-serif;
+  font-size: 2em;
+  color: #F4F7D9; }
 
 /*Lets hide the non active LIs by default*/
 #accordian ul ul {

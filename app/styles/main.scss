@@ -1,9 +1,11 @@
-$dark-blue: #083451;
-$white: #FFFFFF;
-$light-blue: #106DB3;
-$light-gray: #A3B3BF;
-$dark-gray: #5e686f;
-$primary-heading: 'Oswald', Verdana, sans-serif;
+$dark-blue: #417378;
+$white: #F4F7D9;
+$light-blue: #00A388;
+$light-gray: #A4CFBE;
+$dark-gray: #00A388;
+$background-color: #F4F7D9;
+$header: #009393;
+$primary-heading: 'Raleway', Verdana, sans-serif;
 $secondary-heading: 'Open Sans', Verdana, sans-serif;
 
 
@@ -11,6 +13,15 @@ $secondary-heading: 'Open Sans', Verdana, sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: $background-color;
+}
+
+header {
+  background-color: $header;
+  padding-bottom: 10px;
 }
 
 a:link {
@@ -24,7 +35,7 @@ a:visted {
 p {
   text-align: left;
   text-decoration: none;
-  color: $light-gray;
+  color: $white;
   font-family: $secondary-heading;
   font-size: 1em;
   line-height: 25px;
@@ -38,6 +49,7 @@ ul {
   padding: 0;
   overflow: hidden;
   text-align: center;
+  width: 100%;
 }
 
 li {
@@ -49,26 +61,50 @@ li {
 }
 
 h1 {
-  color: $dark-blue;
-  text-transform: uppercase;
+  color: $white;
   font-family: $primary-heading;
   font-size: 4em;
   text-align: center;
 }
 
+h2 {
+  color: $dark-blue;
+  font-family: $secondary-heading;
+  font-size: 2em;
+  text-align: center;
+}
+
+h4 {
+  color: $dark-blue;
+  font-family: $secondary-heading;
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
 .stripe {
-  background: #888;
+  background: $light-gray;
 }
 
 .active {
   color: $white;
   background: $dark-blue;
-  transition: all .5s;
+  transition: all .8s;
   padding: 1em;
+  -webkit-transition:height 0.4s ease-out;
+     -moz-transition:height 0.4s ease-out;
+     -o-transition:height 0.4s ease-out;
+     transition:height 0.4s ease-out;
+
 }
 
-.active:hover {
-  padding-left: 20px;
+h3:hover {
+  padding-left: 40px;
+  padding-top: 10px;
+  font-family: $primary-heading;
+  font-size: 2em;
+  color: $white;
 }
 
 /*Lets hide the non active LIs by default*/
