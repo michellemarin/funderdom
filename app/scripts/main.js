@@ -3,7 +3,7 @@ var templateString = document
                       .innerHTML;
 var nameTemplate = _.template(templateString);
 
-var compiledTemplate = nameTemplate( {
+var compiledTemplate = nameTemplate( { // Don't use an extra space between the ( and the {
   name: 'bill'
 });
 
@@ -44,15 +44,18 @@ destination.innerHTML = nameTemplates.join('');
 /* Part 1 - Question #1 */
 
 function myFunction() {
-var header = document.getElementsByTagName("header")[0];
-header.innerHTML = 'I just changed the DOM magic sauce';
+var header = document.getElementsByTagName("header")[0]; // Both of these lines should be indented.
+header.innerHTML = 'I just changed the DOM magic sauce'; // Both of these lines should be indented.
 }
 
 function changeColor() {
   document.getElementsByTagName("header")[0].style.color="#FF0000";
 }
 
-myFunction('changeColor');
+myFunction('changeColor'); //The name myFunction is really undescriptive and hurts comprehension.
+//I dont know what this code does or why. It looks like a bug, but its not. More descriptive names like changeColor
+//should be used
+
 
 /* Part 1 - Question #2 */
 
@@ -87,5 +90,5 @@ colorDestination.innerHTML = colorTemplates.join('');
 console.log(colorTemplate);
 console.log(colorString);
 
-/* Part 1 - Question #1 console.log that bitch */
+/* Part 1 - Question #1 console.log that bitch */ // Such language, lol
 changeColor();
