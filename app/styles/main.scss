@@ -82,7 +82,6 @@ h4 {
   padding-bottom: 10px;
 }
 
-
 .stripe {
   background: $light-gray;
 }
@@ -105,15 +104,15 @@ h3:hover {
   font-family: $primary-heading;
   font-size: 2em;
   color: $white;
-}
+} // This H3 styling hover should be nested inside the h3 tag base style above
 
 /*Lets hide the non active LIs by default*/
 #accordian ul ul {
-	display: none;
+	display: none; // Why is this line indented so much?
 }
 
 #accordian li.active ul {
-	display: block;
+	display: block; // Why is this line indented so much?
 }
 
 #accordian li p {
@@ -123,3 +122,5 @@ h3:hover {
 #accordian p.active li {
   display: none;
 }
+
+// All of the above #accordian styles should be nested. Scss gives us some cool tools, we should be sure to use them

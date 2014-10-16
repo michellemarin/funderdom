@@ -13,20 +13,20 @@
       <h2>Learn how to greet others in other countries.</h2><br />
       <h4>(So you don't look like the "dumb American" you are...)</h4>
 
-    </header>
+    </header><!-- You don't need this extra line up here -->
 
-  <section id = 'accordian'>
+  <section id = 'accordian'><!-- the extra space here will be considered an error -->
     <ul>
   		<li>
 
-  			<h3>
+  			<h3><!-- Don't need this extra line up here -->
           United States
-          </h3>
+          </h3><!-- This h3 should be outdented to match the other h3 -->
         <ul class="active">
   				<li><p>Hey, how you doin'? (informal)</p></li>
           <li><p>Hello.. how are you? (formal)</p></li>
-          <li><p><em>English</em></p</li>
-          </p></li>
+          <li><p><em>English</em></p</li><!-- Your p tag isn't closed -->
+          </p></li><!-- you have a closing p tag, but no open p tag and you are closing an li tag without opening one -->
   			</ul>
 
   		</li>
@@ -51,6 +51,8 @@
           <li><p>As-salam alaykom (formal)</p</li>
             <li><p><em>Arabic</em></p</li>
             </li>
+            <!-- you have a closing p tag, but no open p tag and you are closing an li tag without opening one -->
+
         </ul>
       </li>
 
@@ -63,6 +65,8 @@
           <li><p>Habari za leo? (formal)</p</li>
             <li><p><em>Swahili</em></p</li>
             </li>
+            <!-- you have a closing p tag, but no open p tag and you are closing an li tag without opening one -->
+
         </ul>
       </li>
 
@@ -76,7 +80,7 @@
           <li><p>Hallo, hoe gaat het? (informal)</p</li>
           <li><p>Goedendag, hoe gaat het met u? (formal)</p</li>
             <li><p><em>Dutch</em></p</li>
-            </li>
+            </li>            <!-- you have a closing p tag, but no open p tag and you are closing an li tag without opening one -->
         </ul>
       </li>
 
@@ -89,6 +93,8 @@
         <li><p>Kon ni chi wa, o genki desu ka? (formal)</p</li>
           <li><p><em>Japanese</em></p</li>
           </li>
+                      <!-- you have a closing p tag, but no open p tag and you are closing an li tag without opening one -->
+
       </ul>
     </li>
 
@@ -96,7 +102,7 @@
 
   </section>
 
-  </script>
+  </script> <!-- WHy is there a closing script here? -->
   <!---LIBS -->
   <script src='jquery/dist/jquery.js'    ></script>
   <script src='underscore/underscore.js' ></script>
